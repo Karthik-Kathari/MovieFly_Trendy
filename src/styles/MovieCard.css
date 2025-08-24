@@ -1,0 +1,29 @@
+.movie-card {
+  flex: 0 0 auto; /* Fixed width for horizontal scrolling */
+  width: 180px;
+  scroll-snap-align: start;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: var(--card-bg, #fff);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.movie-card h3 {
+  font-size: 1rem;
+  text-align: center;
+  padding: 8px;
+  color: var(--text-color);
+}
